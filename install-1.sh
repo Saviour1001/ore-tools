@@ -11,11 +11,14 @@ sudo apt-get install -y \
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
-. "$HOME/.cargo/env"
+## You might need to paste the following line in your terminal to make the cargo command available
+. "$HOME/.cargo/env" 
 
 sh -c "$(curl -sSfL https://release.solana.com/v1.18.4/install)"
 
-export PATH="/home/codespace/.local/share/solana/install/active_release/bin:$PATH"
+
+## Your PATH might be different than the one below
+export PATH="/home/codespace/.local/share/solana/install/active_release/bin:$PATH" 
 
 solana-keygen new 
 

@@ -6,7 +6,8 @@
 3. Run the command
    `bash install-1.sh`
 4. It will generate a Solana Address for you, fund the wallet and keep the keypair safe.
-5. Run the command
+5. Add your custom RPC URL in the install-2.sh file.
+6. Run the command
    `bash install-2.sh`
 
 Happy Mining.

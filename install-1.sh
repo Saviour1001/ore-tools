@@ -11,11 +11,11 @@ sudo apt-get install -y \
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
-source ~/.bashrc
+. "$HOME/.cargo/env"
 
 sh -c "$(curl -sSfL https://release.solana.com/v1.18.4/install)"
 
-PATH="/home/codespace/.local/share/solana/install/active_release/bin:$PATH"
+export PATH="/home/codespace/.local/share/solana/install/active_release/bin:$PATH"
 
 solana-keygen new 
 
